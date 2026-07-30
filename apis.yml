@@ -1,20 +1,55 @@
 aid: le-tote
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/le-tote.png
 name: LE TOTE
-description: LE TOTE is a company surfaced as a portfolio company of 500-global, a16z and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Le Tote was an online women's clothing rental and subscription-box business
+  founded in San Francisco in 2012 by Brett Northart and Rakesh Tondon, and a
+  member of the Y Combinator Summer 2013 batch. Unlike Rent the Runway, which
+  concentrated on high-end event wear, Le Tote rented everyday apparel and
+  accessories through a rotating personalized "tote" driven by its own sizing and
+  recommendation data. In August 2019 it agreed to acquire the Lord & Taylor
+  department-store chain from Hudson's Bay Company; both businesses filed for
+  Chapter 11 bankruptcy on 2 August 2020, and Saadia Group bought the assets that
+  October. Saadia Group was reported effectively shut down in March 2024 and the
+  letote.com site went offline that spring. Le Tote is defunct: the domain no
+  longer resolves, and the company never published a public API or developer
+  portal. This profile is retained as a historical record of its open-source
+  engineering output.
 url: https://raw.githubusercontent.com/api-evangelist/le-tote/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 - a16z
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: enriched
+x-tier-reason: >-
+  Enriched 2026-07-19. Company is defunct and publishes no API; the profile
+  captures the verified open-source and lifecycle record instead.
+x-status: defunct
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Defunct
+- Retail
+- Fashion
+- E-Commerce
+- Clothing Rental
+- Subscription Commerce
+- Open Source
+- Y Combinator
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +59,27 @@ maintainers:
 common:
 - type: Website
   url: https://letote.com
+  x-status: defunct
+  x-note: >-
+    Historical canonical domain. Registered but unresolvable as of 2026-07-19 —
+    see security/le-tote-domain-security.yml.
+- type: GitHubOrganization
+  name: Le Tote on GitHub
+  url: https://github.com/LeToteTeam
+- type: Packages
+  name: First-party open-source packages
+  url: packages/le-tote-packages.yml
+- type: Lifecycle
+  name: Company and API lifecycle
+  url: lifecycle/le-tote-lifecycle.yml
+- type: DomainSecurity
+  name: Probed domain security posture
+  url: security/le-tote-domain-security.yml
+- type: LLMsTxt
+  name: llms.txt
+  url: llms/le-tote-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
