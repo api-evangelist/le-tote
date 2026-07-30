@@ -1,0 +1,59 @@
+generated: '2026-07-19'
+method: probed
+source: dig / whois / curl against letote.com on 2026-07-19
+summary: >-
+  letote.com is still registered but is wholly unresolvable. The domain delegates
+  to four Amazon Route 53 nameservers that REFUSE the zone, meaning the hosted
+  zone was deleted while the NS records remained at the registrar — a dangling
+  delegation. Every DNS lookup returns SERVFAIL, so there is no A record, no
+  mail, no TLS endpoint, and no /.well-known surface to probe. This is consistent
+  with the company being defunct (see lifecycle/le-tote-lifecycle.yml).
+registration:
+  domain: letote.com
+  registered: true
+  registrar: IONOS SE
+  registrar_iana_id: 83
+  creation_date: '2012-03-29'
+  updated_date: '2026-03-30'
+  status: ACTIVE
+delegation:
+  resolves: false
+  resolution_status: SERVFAIL
+  dangling: true
+  registry_ns:
+  - ns-438.awsdns-54.com
+  - ns-614.awsdns-12.net
+  - ns-1197.awsdns-21.org
+  - ns-1867.awsdns-41.co.uk
+  authoritative_response: REFUSED
+  note: >-
+    Route 53 nameservers answer REFUSED for letote.com, indicating no hosted zone
+    exists for the delegated domain. A dangling NS delegation of this shape is a
+    recognized domain-takeover risk vector should the zone name be re-claimed in
+    the same Route 53 namespace.
+hosts:
+- host: letote.com
+  resolves: false
+  https: false
+  tls_version: null
+  hsts: null
+  error: SERVFAIL / could not resolve host
+- host: www.letote.com
+  resolves: false
+  https: false
+  tls_version: null
+  hsts: null
+  error: NXDOMAIN / could not resolve host
+domains:
+- domain: letote.com
+  dnssec: null
+  caa: null
+  spf: null
+  dmarc: null
+  dmarc_policy: null
+  note: >-
+    Not "absent" — unmeasurable. The zone does not answer, so no record class can
+    be evaluated either way.
+well_known:
+  probed: false
+  reason: no resolvable host to probe /.well-known/ against

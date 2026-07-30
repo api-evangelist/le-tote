@@ -1,0 +1,87 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/LeToteTeam
+notes: >-
+  These are first-party open-source engineering libraries published by Le Tote's
+  engineering organization (github.com/LeToteTeam), verified as non-forks on
+  GitHub and resolved on their public registries. They are NOT client SDKs for a
+  Le Tote API — Le Tote never published a public API, and no SDKs pointer is
+  emitted in apis.yml for that reason. All are unmaintained: the newest release
+  activity is 2019 and the company is defunct (see lifecycle/le-tote-lifecycle.yml).
+packages:
+- language: elixir
+  registry: hex
+  name: band
+  version: 0.5.2
+  url: https://hex.pm/packages/band
+  install: '{:band, "~> 0.5.2"}'
+  source_code: https://github.com/LeToteTeam/band
+  license: Apache-2.0
+  description: A collection of instrumenters for common Elixir projects.
+  official: true
+  maintained: false
+  last_commit: '2018-06-20'
+  evidence: hex.pm meta.links.Github = https://github.com/letoteteam/band
+- language: elixir
+  registry: hex
+  name: tm_mercury
+  version: 0.6.0
+  url: https://hex.pm/packages/tm_mercury
+  install: '{:tm_mercury, "~> 0.6.0"}'
+  source_code: https://github.com/LeToteTeam/tm_mercury
+  license: Apache-2.0
+  description: A pure Elixir implementation of the ThingMagic Mercury SDK (RFID readers).
+  official: true
+  maintained: false
+  last_commit: '2019-01-22'
+  evidence: hex.pm meta.links.Github = https://github.com/letoteteam/tm_mercury
+- language: ruby
+  registry: rubygems
+  name: unresponsys
+  version: '0.6'
+  url: https://rubygems.org/gems/unresponsys
+  install: gem install unresponsys
+  source_code: https://github.com/LeToteTeam/unresponsys
+  license: null
+  description: An opinionated Ruby wrapper for the Responsys REST API.
+  official: true
+  maintained: false
+  last_commit: '2018-11-30'
+  evidence: >-
+    LeToteTeam/unresponsys is a non-fork GitHub repo with a matching description;
+    the gem carries no homepage_uri and its RubyGems owners are individual
+    accounts (kevinkimball, evanboho) rather than an org account.
+- language: swift
+  registry: cocoapods
+  name: Stardaze
+  version: 1.3.1
+  url: https://cocoapods.org/pods/Stardaze
+  install: "pod 'Stardaze'"
+  source_code: https://github.com/LeToteTeam/Stardaze
+  license: MIT
+  description: A Swift GraphQL query-building tool.
+  official: true
+  maintained: false
+  last_commit: '2018-02-21'
+  evidence: >-
+    LeToteTeam/Stardaze is a non-fork MIT Swift repo; CocoaPods trunk resolves
+    the pod (owners William Wilson, Jorge Mendez).
+excluded:
+  reason: >-
+    Present in the GitHub org but forks of third-party projects, so not
+    first-party Le Tote packages.
+  repos:
+  - aliyun-sms
+  - aws-env
+  - better_errors
+  - datadog-serverless-functions
+  - ecs-deploy
+  - fontello
+  - iterable-ios-sdk
+  - logger_logentries_backend
+  - money
+  - omniauth-apple
+  - PaymentKit
+  - secure_headers
+  - sidekiq-cloudwatchmetrics
+  - SwiftLint

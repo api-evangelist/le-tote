@@ -1,0 +1,62 @@
+generated: '2026-07-19'
+method: searched
+source: https://en.wikipedia.org/wiki/Le_Tote
+status: defunct
+summary: >-
+  Le Tote is a defunct company, not a dormant one. There is no API to version, no
+  deprecation policy, no SLA, and no status page — the entire consumer service was
+  shut down and its domain no longer resolves. This artifact records the company
+  lifecycle so downstream consumers of the network understand why every API-side
+  artifact in this repo is legitimately empty.
+api_surface:
+  public_api: false
+  note: >-
+    No evidence of a public Le Tote API, developer portal, or API documentation was
+    found. The only public developer surface the company ever maintained is its
+    GitHub organization of internal engineering libraries (see packages/).
+versioning: null
+deprecation: null
+sla: null
+status_page: null
+deprecated_operations: []
+timeline:
+- date: '2012'
+  event: Le Tote founded in San Francisco by Brett Northart and Rakesh Tondon.
+  source: https://en.wikipedia.org/wiki/Le_Tote
+- date: '2013'
+  event: Participates in Y Combinator Summer 2013 batch.
+  source: https://www.ycombinator.com/companies/le-tote
+- date: '2019-08'
+  event: >-
+    Agrees to acquire Lord & Taylor from Hudson's Bay Company for C$99.5 million
+    upfront plus C$33.2 million deferred; HBC takes a 25% equity stake in Le Tote.
+  source: https://en.wikipedia.org/wiki/Le_Tote
+- date: '2020-08-02'
+  event: Le Tote and Lord & Taylor file for Chapter 11 bankruptcy protection.
+  source: https://en.wikipedia.org/wiki/Le_Tote
+- date: '2020-10-20'
+  event: Saadia Group acquires the Le Tote and Lord & Taylor assets out of bankruptcy.
+  source: https://en.wikipedia.org/wiki/Le_Tote
+- date: '2024-03'
+  event: >-
+    Women's Wear Daily reports Saadia Group has been "effectively shut down" after
+    defaulting on asset-based lending agreements.
+  source: https://en.wikipedia.org/wiki/Le_Tote
+- date: '2024-spring'
+  event: >-
+    The letote.com website goes offline; the final archived snapshot is dated
+    2024-02-19.
+  source: https://en.wikipedia.org/wiki/Le_Tote
+- date: '2026-07-19'
+  event: >-
+    Probed for this pipeline run — letote.com still registered (IONOS) but wholly
+    unresolvable (SERVFAIL, dangling Route 53 delegation). GitHub org remains
+    public and readable; last repository activity 2020.
+  source: security/le-tote-domain-security.yml
+open_source:
+  github_org: https://github.com/LeToteTeam
+  repositories: 19
+  first_party_non_forks: 5
+  published_packages: 4
+  last_activity: '2020-03-30'
+  artifact: packages/le-tote-packages.yml

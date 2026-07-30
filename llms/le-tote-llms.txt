@@ -1,0 +1,34 @@
+# Le Tote
+
+> Le Tote was an online women's clothing rental and subscription-box business founded in San Francisco in 2012 by Brett Northart and Rakesh Tondon (Y Combinator S13). It acquired Lord & Taylor from Hudson's Bay Company in August 2019, filed for Chapter 11 bankruptcy on 2 August 2020, and was sold to Saadia Group that October. Saadia Group was reported effectively shut down in March 2024 and the letote.com website went offline that spring. **Le Tote is defunct.**
+
+## Status
+
+- The company is out of business. There is no live website: letote.com is still registered with IONOS but returns SERVFAIL — it delegates to Amazon Route 53 nameservers that no longer host the zone.
+- Le Tote never published a public API, developer portal, or API documentation. This repository therefore contains no OpenAPI, AsyncAPI, MCP, skills, scopes, authentication, conventions, or error artifacts — those absences are accurate, not gaps awaiting enrichment.
+- The only public developer surface that survives is the GitHub organization, which remains readable.
+
+## Developer surface
+
+- [GitHub organization](https://github.com/LeToteTeam): 19 public repositories, 5 of them first-party non-forks. Last activity 2020.
+
+## First-party packages
+
+Internal engineering libraries published by Le Tote — not client SDKs for any Le Tote API. All unmaintained.
+
+- [band](https://hex.pm/packages/band) (Elixir, Hex, Apache-2.0): a collection of instrumenters for common Elixir projects.
+- [tm_mercury](https://hex.pm/packages/tm_mercury) (Elixir, Hex, Apache-2.0): a pure Elixir implementation of the ThingMagic Mercury RFID reader SDK.
+- [unresponsys](https://rubygems.org/gems/unresponsys) (Ruby, RubyGems): an opinionated Ruby wrapper for the Responsys REST API.
+- [Stardaze](https://cocoapods.org/pods/Stardaze) (Swift, CocoaPods, MIT): a Swift GraphQL query-building tool.
+
+## Artifacts in this profile
+
+- [Packages](https://raw.githubusercontent.com/api-evangelist/le-tote/refs/heads/main/packages/le-tote-packages.yml): the four verified first-party packages, with the forked repos explicitly excluded.
+- [Lifecycle](https://raw.githubusercontent.com/api-evangelist/le-tote/refs/heads/main/lifecycle/le-tote-lifecycle.yml): the company timeline from founding to shutdown, and why the API surface is empty.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/le-tote/refs/heads/main/security/le-tote-domain-security.yml): the probed state of letote.com, including the dangling Route 53 delegation.
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/le-tote/refs/heads/main/apis.yml): the machine-readable profile index.
+
+## Background
+
+- [Wikipedia: Le Tote](https://en.wikipedia.org/wiki/Le_Tote)
+- [Y Combinator: Le Tote](https://www.ycombinator.com/companies/le-tote) (listed status: Inactive)
