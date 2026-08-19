@@ -37,7 +37,7 @@ x-tier-reason: >-
   Enriched 2026-07-19. Company is defunct and publishes no API; the profile
   captures the verified open-source and lifecycle record instead.
 x-status: defunct
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
