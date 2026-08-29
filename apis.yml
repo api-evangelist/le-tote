@@ -38,6 +38,9 @@ description: >-
   portal. This profile is retained as a historical record of its open-source
   engineering output.
 url: https://raw.githubusercontent.com/api-evangelist/le-tote/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Le Tote is defunct: the domain no longer resolves, and the company never published a public API or developer portal."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
